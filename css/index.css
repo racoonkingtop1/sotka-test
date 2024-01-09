@@ -1,0 +1,134 @@
+:root {
+    --main-color:  #EC5598;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 48px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.header__img {
+    text-align: center;
+    margin: 0 auto !important;
+}
+
+/* */
+
+main {
+    display: block;
+    text-align: center;
+}
+
+.main-cards {
+    width: 60vw;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-card {
+    width: 330px;
+    height: 400px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.main-card__naming {
+    background-color: white;
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    width: 80%;
+    box-shadow: 0px 15px 55px 0px #00000014;
+}
+
+.naming__main {
+    font-family: Lora;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 75%;
+}
+
+.naming__desc {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 75%;
+    margin: 5px 0;
+}
+
+.learn-more {
+    display: block;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    text-align: right;
+    margin-top: 10px;
+    color: var(--main-color);
+    text-decoration: none;
+    transition: ease-in-out 0.1s;
+}
+
+.learn-more:hover {
+    opacity: 0.8;
+}
+
+/*  */
+
+.see-more-service {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-align: left;
+    color: var(--main-color);
+    padding: 18px 45px;
+    margin: 20px 0;
+    border: 1.5px solid var(--main-color);
+    border-radius: 5px;
+    background-color: unset;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.see-more-service:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/*  */
+
+@media(max-width: 1133px) {
+    .main-cards {
+        margin: 20px auto;
+    }
+}
